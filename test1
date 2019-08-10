@@ -1,0 +1,13 @@
+#include<stdio.h>
+main()
+{
+int r,r1,s,count=0;
+scanf("%d%d",&r,&s);
+count=r;
+while(r>0)
+{
+count=count+(r*(100-s)/100);
+r=(((100-s)*r)/100);
+}
+printf("%d",count);
+}
